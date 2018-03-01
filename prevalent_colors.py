@@ -67,7 +67,7 @@ with open(urls_file) as f:
 
         for i in range(ind.size):
             peak = codes[ind[i],:]
-            peak1 = [format(int(c), 'X') for c in peak]
+            peak1 = [format(int(c), '02X') for c in peak]
             color = "".join(peak1)
             line = line + ',''#'+ color
 
